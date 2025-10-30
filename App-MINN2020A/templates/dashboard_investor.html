@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 class="text-success mb-4">Investor Dashboard</h3>
+
+<div class="row mb-4 text-center">
+  <div class="col-md-4 mb-3">
+    <div class="card shadow-sm border-0 bg-light">
+      <div class="card-body">
+        <h6>Total Countries Tracked</h6>
+        <h3 class="fw-bold text-success">9</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card shadow-sm border-0 bg-light">
+      <div class="card-body">
+        <h6>Top Producing Mineral</h6>
+        <h3 class="fw-bold text-primary">Cobalt (DRC)</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card shadow-sm border-0 bg-light">
+      <div class="card-body">
+        <h6>Avg GDP (2024)</h6>
+        <h3 class="fw-bold text-warning">$72 Bn</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card shadow-sm mb-4">
+  <div class="card-body">
+    <h5 class="card-title">Mineral Production Overview</h5>
+    <div id="inv_chart"></div>
+  </div>
+</div>
+
+<script>
+  const data = [{
+    x: ['Cobalt (DRC)', 'Lithium (Zimbabwe)', 'Graphite (Mozambique)', 'Copper (Zambia)', 'Manganese (SA)'],
+    y: [220000, 12000, 170000, 720000, 7400000],
+    type: 'bar',
+    marker: {color: ['#0d6efd','#6610f2','#20c997','#198754','#fd7e14']}
+  }];
+  const layout = {title: 'Top Mineral Production (2024)', xaxis:{title:'Mineral'}, yaxis:{title:'Tonnes'}};
+  Plotly.newPlot('inv_chart', data, layout);
+</script>
+{% endblock %}

@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 class="text-primary mb-4">Administrator Dashboard</h3>
+
+<!-- ===== Summary Cards ===== -->
+<div class="row text-center">
+  <!-- Total Users -->
+  <div class="col-md-4 mb-3">
+    <div class="card shadow-sm border-0 bg-light">
+      <div class="card-body">
+        <h6>Total Users</h6>
+        <h3 class="fw-bold text-primary">
+          {{ (users or []) | length }}
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Administrators -->
+  <div class="col-md-4 mb-3">
+    <div class="card shadow-sm border-0 bg-light">
+      <div class="card-body">
+        <h6>Administrators</h6>
+        <h3 class="fw-bold text-success">
+          {{ (role_counts and role_counts.get('Administrator', 0)) or 0 }}
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Locked Accounts -->
+  <div class="col-md-4 mb-3">
+    <div class="card shadow-sm border-0 bg-light">
+      <div class="card-body">
+        <h6>Locked Accounts</h6>
+        <h3 class="fw-bold text-danger">
+          {% if users %}
+            {{ users | selectattr('locked_until', 'ne', None) | list | length }}
+          {% else %}
+            0
+          {% endif %}
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Role Distribution Chart ===== -->
+<div id="rolesChart" class="my-4"></div>
+
+<!-- Safely embed role_counts as JSON -->
+<script id="role-data" type="application/json">
+  {{ (role_counts or {}) | tojson }}
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    try {
+      const roleDataScript = document.getElementById("role-data");
+      const roleData = roleDataScript ? JSON.parse(roleDataScript.textContent) : {};
+
+      const values = [
+        roleData.Administrator || 0,
+        roleData.Investor || 0,
+        roleData.Researcher || 0
+      ];
+
+      const data = [{
+        values: values,
+        labels: ['Administrator', 'Investor', 'Researcher'],
+        type: 'pie',
+        marker: { colors: ['#007bff', '#28a745', '#ffc107'] }
+      }];
+
+      const layout = {
+        title: 'User Role Distribution',
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        font: { family: 'Arial, sans-serif', size: 14 }
+      };
+
+      if (typeof Plotly !== "undefined") {
+        Plotly.newPlot("rolesChart", data, layout, { responsive: true });
+      } else {
+        console.error("Plotly is not loaded. Please include plotly.js in base.html.");
+      }
+    } catch (err) {
+      console.error("Error rendering role chart:", err);
+    }
+  });
+</script>
+
+<!-- ===== User Management Table ===== -->
+<h5 class="mt-5">User Management</h5>
+
+<div class="table-responsive">
+  <table class="table table-striped table-sm align-middle">
+    <caption class="text-muted">
+      List of all registered users and their account status.
+    </caption>
+    <thead class="table-primary">
+      <tr>
+        <th scope="col">User ID</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Role</th>
+        <th scope="col">Locked</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% if users %}
+        {% for u in users %}
+        <tr>
+          <td>{{ u.user_id }}</td>
+          <td>{{ u.username }}</td>
+          <td>{{ u.email }}</td>
+          <td>{{ u.role }}</td>
+          <td>{{ u.locked_until or "No" }}</td>
+          <td>
+            {% if u.locked_until %}
+              <form method="post" action="{{ url_for('admin_unlock', user_id=u.user_id) }}">
+                {% if form and form.csrf_token %}
+                  {{ form.csrf_token }}
+                {% endif %}
+                <button type="submit" class="btn btn-sm btn-warning">Unlock</button>
+              </form>
+            {% else %}
+              <small class="text-muted">Active</small>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      {% else %}
+        <tr>
+          <td colspan="6" class="text-center text-muted">No users found.</td>
+        </tr>
+      {% endif %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 class="text-info mb-4">Researcher Dashboard</h3>
+
+<div class="card shadow-sm mb-4">
+  <div class="card-body">
+    <h5 class="card-title">Multi-Mineral Production Analysis</h5>
+    <div id="research_chart"></div>
+  </div>
+</div>
+
+<script>
+  const minerals = ['Lithium','Cobalt','Graphite (natural)','Manganese','Copper','Nickel'];
+  const years = [2020,2021,2022,2023,2024];
+  const production = {
+    'Lithium':[1500,3200,4800,7200,12000],
+    'Cobalt':[140000,160000,170000,175000,220000],
+    'Graphite (natural)':[120000,142000,165932,160000,170000],
+    'Manganese':[5600000,6000000,7000000,7200000,7400000],
+    'Copper':[769000,763000,698000,698000,720000],
+    'Nickel':[12000,13000,14000,15000,16000]
+  };
+  const data = minerals.map(m => ({
+    x: years, y: production[m], mode: 'lines+markers', name: m
+  }));
+  const layout = {title:'Mineral Production Trends (2020–2024)', xaxis:{title:'Year'}, yaxis:{title:'Tonnes'}};
+  Plotly.newPlot('research_chart', data, layout);
+</script>
+
+<div class="d-flex justify-content-between align-items-center mt-4">
+  <h5>Dataset Overview</h5>
+  <a href="/api/minerals" class="btn btn-outline-secondary btn-sm">⬇ Export JSON</a>
+</div>
+
+<table class="table table-hover table-sm mt-3">
+  <thead class="table-info">
+    <tr>
+      <th>Mineral</th>
+      <th>Main Uses</th>
+      <th>Countries</th>
+      <th>Deposits</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for m in minerals %}
+    <tr>
+      <td>{{ m.name }}</td>
+      <td>{{ m.main_uses|join(', ') }}</td>
+      <td>{{ m.major_countries|join(', ') }}</td>
+      <td>{{ m.deposits|length }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

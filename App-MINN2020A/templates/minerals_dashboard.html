@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 class="mb-3 text-primary">African Critical Minerals Dashboard</h3>
+
+{% if not single %}
+  <div class="card mb-4 shadow">
+    <div class="card-body">
+      <h5 class="card-title">Overall Production Overview (2020–2024)</h5>
+      <div>{{ chart_html|safe }}</div>
+    </div>
+  </div>
+
+  <div class="row">
+    {% for mineral in minerals %}
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{ mineral.name }}</h5>
+            <p><strong>Uses:</strong> {{ mineral.main_uses|join(', ') }}</p>
+            <a href="{{ url_for('mineral_detail_chart', mineral_name=mineral.name) }}" class="btn btn-outline-primary btn-sm">View Chart</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <a href="{{ url_for('minerals_dashboard') }}" class="btn btn-link">&larr; Back to all minerals</a>
+  <div class="card mt-3 shadow">
+    <div class="card-body">
+      <h5 class="card-title">{{ mineral_name }} Production Chart</h5>
+      <div>{{ chart_html|safe }}</div>
+    </div>
+  </div>
+{% endif %}
+{% endblock %}

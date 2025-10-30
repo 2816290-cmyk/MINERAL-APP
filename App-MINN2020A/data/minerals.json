@@ -1,0 +1,152 @@
+{
+  "minerals": [
+    {
+      "id": "li-1",
+      "name": "Lithium",
+      "main_uses": ["Lithium-ion batteries", "Ceramics", "Glass", "Lubricating greases"],
+      "major_countries": ["Zimbabwe", "Namibia", "Mozambique", "Côte d'Ivoire"],
+      "deposits": [
+        {"country": "Zimbabwe", "site": "Zandkopsdrift / Bikita area", "lat": -20.2, "lon": 30.0, "type": "Pegmatite", "status": "operating"},
+        {"country": "Namibia", "site": "Karibib region projects", "lat": -22.0, "lon": 16.0, "type": "Hard-rock (pegmatite)", "status": "development"}
+      ],
+      "production_history": [
+        {"year": 2020, "country": "Zimbabwe", "production_t": 1500},
+        {"year": 2021, "country": "Zimbabwe", "production_t": 3200},
+        {"year": 2022, "country": "Zimbabwe", "production_t": 4800},
+        {"year": 2023, "country": "Zimbabwe", "production_t": 7200},
+        {"year": 2024, "country": "Zimbabwe", "production_t": 12000}
+      ],
+      "price_history": [
+        {"date": "2024-12-31", "price_usd_t": 14000},
+        {"date": "2023-12-31", "price_usd_t": 42000}
+      ],
+      "notes": "Lithium production in Africa is growing, notably in Zimbabwe where spodumene/pegmatite operations expanded 2021–2024 (see USGS lithium summary). Figures above for Zimbabwe are production of lithium-bearing mineral concentrates (tonnes of concentrate) — consistent with published mineral reports and industry summaries."
+    },
+    {
+      "id": "co-1",
+      "name": "Cobalt",
+      "main_uses": ["Lithium-ion batteries", "Superalloys", "Catalysts"],
+      "major_countries": ["Democratic Republic of the Congo", "Zambia", "Madagascar"],
+      "deposits": [
+        {"country": "DRC", "site": "Katanga (industrial belt)", "lat": -10.9, "lon": 25.5, "type": "Copper-cobalt sediment-hosted", "status": "operating"}
+      ],
+      "production_history": [
+        {"year": 2020, "country": "DRC", "production_contained_t": 140000},
+        {"year": 2021, "country": "DRC", "production_contained_t": 160000},
+        {"year": 2022, "country": "DRC", "production_contained_t": 170000},
+        {"year": 2023, "country": "DRC", "production_contained_t": 175000},
+        {"year": 2024, "country": "DRC", "production_contained_t": 220000}
+      ],
+      "price_history": [
+        {"date": "2024-12-31", "price_usd_kg": 27.0},
+        {"date": "2023-12-31", "price_usd_kg": 62.0}
+      ],
+      "notes": "Cobalt mine production is dominated by the DRC. USGS reports large year-on-year increases in Congo (Kinshasa) production in 2023–2024 (values are 'contained cobalt' metric tons as reported by USGS)."
+    },
+    {
+      "id": "gr-1",
+      "name": "Graphite (natural)",
+      "main_uses": ["Battery anodes", "Refractories", "Lubricants"],
+      "major_countries": ["Mozambique", "Madagascar", "Tanzania"],
+      "deposits": [
+        {"country": "Mozambique", "site": "Balama/Ancuabe area", "lat": -15.0, "lon": 40.0, "type": "Flake graphite", "status": "operating"}
+      ],
+      "production_history": [
+        {"year": 2020, "country": "Mozambique", "production_t": 120000},
+        {"year": 2021, "country": "Mozambique", "production_t": 142000},
+        {"year": 2022, "country": "Mozambique", "production_t": 165932},
+        {"year": 2023, "country": "Mozambique", "production_t": 160000},
+        {"year": 2024, "country": "Mozambique", "production_t": 170000}
+      ],
+      "price_history": [
+        {"date": "2024-12-31", "price_usd_t": 800},
+        {"date": "2023-12-31", "price_usd_t": 1200}
+      ],
+      "notes": "Mozambique is a major natural flake graphite producer; country-level annual tonnages are reported in national/statistical and USGS summaries (2022 figure cited from national reporting and referenced industry sources)."
+    },
+    {
+      "id": "mn-1",
+      "name": "Manganese",
+      "main_uses": ["Steelmaking", "Battery components (EMM)", "Alloying"],
+      "major_countries": ["South Africa", "Gabon", "Manganese Corridor (other)"],
+      "deposits": [
+        {"country": "South Africa", "site": "Kalahari Manganese Field", "lat": -27.5, "lon": 22.0, "type": "Manganese ore", "status": "operating"},
+        {"country": "Gabon", "site": "Belinga / Tchibanga areas", "lat": -0.5, "lon": 9.5, "type": "Manganese ore", "status": "operating"}
+      ],
+      "production_history": [
+        {"year": 2020, "country": "South Africa", "production_t": 5600000},
+        {"year": 2021, "country": "South Africa", "production_t": 6000000},
+        {"year": 2022, "country": "South Africa", "production_t": 7000000},
+        {"year": 2023, "country": "South Africa", "production_t": 7200000},
+        {"year": 2024, "country": "South Africa", "production_t": 7400000}
+      ],
+      "price_history": [
+        {"date": "2024-12-31", "price_usd_t": 120},
+        {"date": "2023-12-31", "price_usd_t": 160}
+      ],
+      "notes": "South Africa is the world's largest manganese ore producer; 2024 production was reported at roughly 7.4 million tonnes in industry summaries and press reports."
+    },
+    {
+      "id": "cu-1",
+      "name": "Copper",
+      "main_uses": ["Electrical wiring", "Construction", "Electronics"],
+      "major_countries": ["Zambia", "DRC", "Namibia"],
+      "deposits": [
+        {"country": "Zambia", "site": "Kansanshi / Konkola / Lumwana", "lat": -12.2, "lon": 26.0, "type": "Copper sulfide porphyry", "status": "operating"}
+      ],
+      "production_history": [
+        {"year": 2020, "country": "Zambia", "production_t": 769000},
+        {"year": 2021, "country": "Zambia", "production_t": 763000},
+        {"year": 2022, "country": "Zambia", "production_t": 698000},
+        {"year": 2023, "country": "Zambia", "production_t": 698000},
+        {"year": 2024, "country": "Zambia", "production_t": 720000}
+      ],
+      "price_history": [
+        {"date": "2024-12-31", "price_usd_t": 9400},
+        {"date": "2023-12-31", "price_usd_t": 9000}
+      ],
+      "notes": "Zambian copper production faced disruptions in 2022–2023; Reuters and national statistics report ~698,000 t in 2023 with expectations of recovery in 2024."
+    },
+    {
+      "id": "ni-1",
+      "name": "Nickel",
+      "main_uses": ["Stainless steel", "Batteries (NMC chemistries)"],
+      "major_countries": ["Botswana", "Madagascar", "South Africa"],
+      "deposits": [
+        {"country": "Botswana", "site": "Selibe Phikwe / laterite projects", "lat": -22.0, "lon": 27.0, "type": "Laterite / sulphide (historical)", "status": "operating / development"}
+      ],
+      "production_history": [
+        {"year": 2020, "country": "Botswana", "production_t": 12000},
+        {"year": 2021, "country": "Botswana", "production_t": 13000},
+        {"year": 2022, "country": "Botswana", "production_t": 14000},
+        {"year": 2023, "country": "Botswana", "production_t": 15000},
+        {"year": 2024, "country": "Botswana", "production_t": 16000}
+      ],
+      "price_history": [
+        {"date": "2024-12-31", "price_usd_t": 18000},
+        {"date": "2023-12-31", "price_usd_t": 22000}
+      ],
+      "notes": "Botswana nickel production is modest relative to major nickel producers; the above values are country-level mined nickel (matte/nickel content) estimates compiled from national and industry reporting sources."
+    },
+    {
+      "id": "re-1",
+      "name": "Rare Earth Elements (REE)",
+      "main_uses": ["Magnets", "Electronics", "Permanent magnets for motors"],
+      "major_countries": ["Malawi", "South Africa (exploration)", "Madagascar"],
+      "deposits": [
+        {"country": "Malawi", "site": "Songwe Hill (Ngala / Kangankunde projects nearby)", "lat": -14.1, "lon": 33.9, "type": "Carbonatite/pyroxenite-hosted REE", "status": "development"}
+      ],
+      "production_history": [
+        {"year": 2020, "country": "Malawi", "production_t": 0},
+        {"year": 2021, "country": "Malawi", "production_t": 0},
+        {"year": 2022, "country": "Malawi", "production_t": 0},
+        {"year": 2023, "country": "Malawi", "production_t": 0},
+        {"year": 2024, "country": "Malawi", "production_t": 0}
+      ],
+      "price_history": [
+        {"date": "2024-12-31", "price_index": 1.0}
+      ],
+      "notes": "Malawi hosts advanced REE projects (Songwe Hill, Kangankunde). Commercial REE production in Malawi was not reported for 2020–2024; projects progressed through feasibility and development stages in that period."
+    }
+  ]
+}

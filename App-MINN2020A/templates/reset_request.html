@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow">
+      <div class="card-header"><h5>Password reset</h5></div>
+      <div class="card-body">
+        <form method="post">
+          <div class="mb-3">
+            <label>Email</label>
+            <input name="email" type="email" required class="form-control">
+          </div>
+          <button class="btn btn-primary">Send reset link</button>
+        </form>
+        {% if reset_link %}
+          <hr>
+          <div class="alert alert-info">
+            <strong>Demo reset link:</strong>
+            <div><a href="{{ reset_link }}">{{ reset_link }}</a></div>
+            <small class="text-muted">Use this link to reset password (demo mode).</small>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

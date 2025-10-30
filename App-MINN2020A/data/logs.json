@@ -1,0 +1,225 @@
+{
+  "logs": [
+    {
+      "timestamp": "2025-10-16T06:13:50.072311Z",
+      "event": "user_created",
+      "user_id": "MINN251016SA317693",
+      "username": "system.admin.sou.min",
+      "role": "Administrator",
+      "meta": {
+        "email": "admin@example.com",
+        "country": "SouthAfrica"
+      }
+    },
+    {
+      "timestamp": "2025-10-16T06:15:45.208646Z",
+      "event": "login_failed",
+      "user_id": "MINN251016SA317693",
+      "username": "system.admin.sou.min",
+      "attempts": 1,
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:15:57.718601Z",
+      "event": "login_failed",
+      "username": "philani.mavimbela.ken",
+      "reason": "no_user",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:17:29.079901Z",
+      "event": "login_failed",
+      "user_id": "MINN251016SA317693",
+      "username": "system.admin.sou.min",
+      "attempts": 1,
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:17:43.024778Z",
+      "event": "login_failed",
+      "user_id": "MINN251016SA317693",
+      "username": "system.admin.sou.min",
+      "attempts": 1,
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:18:16.319326Z",
+      "event": "login_success",
+      "user_id": "MINN251016SA317693",
+      "username": "system.admin.sou.min",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:22:18.773048Z",
+      "event": "user_created",
+      "user_id": "MINN251016IK453900",
+      "username": "isaiah.khupe.uni.har",
+      "role": "Researcher",
+      "meta": {
+        "email": "Isaiah.Khupe@outlook.com",
+        "country": "United States of America"
+      }
+    },
+    {
+      "timestamp": "2025-10-16T06:22:40.597141Z",
+      "event": "login_success",
+      "user_id": "MINN251016IK453900",
+      "username": "isaiah.khupe.uni.har",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:25:47.429755Z",
+      "event": "user_created",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay",
+      "role": "Investor",
+      "meta": {
+        "email": "Barney.Gwitima@outlook.com",
+        "country": "Germany"
+      }
+    },
+    {
+      "timestamp": "2025-10-16T06:26:07.006380Z",
+      "event": "login_success",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:45:32.770290Z",
+      "event": "login_success",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:46:00.908770Z",
+      "event": "login_success",
+      "user_id": "MINN251016IK453900",
+      "username": "isaiah.khupe.uni.har",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:48:20.252188Z",
+      "event": "login_success",
+      "user_id": "MINN251016IK453900",
+      "username": "isaiah.khupe.uni.har",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:53:07.602232Z",
+      "event": "login_success",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:55:08.968010Z",
+      "event": "password_reset",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay"
+    },
+    {
+      "timestamp": "2025-10-16T06:55:15.916636Z",
+      "event": "login_success",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:56:15.600176Z",
+      "event": "login_success",
+      "user_id": "MINN251016SA317693",
+      "username": "system.admin.sou.min",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T06:58:32.067775Z",
+      "event": "login_success",
+      "user_id": "MINN251016SA317693",
+      "username": "system.admin.sou.min",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T07:00:11.894500Z",
+      "event": "login_success",
+      "user_id": "MINN251016IK453900",
+      "username": "isaiah.khupe.uni.har",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T07:01:53.035703Z",
+      "event": "login_success",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T07:04:26.236243Z",
+      "event": "password_reset",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay"
+    },
+    {
+      "timestamp": "2025-10-16T07:08:09.865639Z",
+      "event": "user_created",
+      "user_id": "MINN251016RM232502",
+      "username": "rose.morakwena.sou",
+      "role": "Researcher",
+      "meta": {
+        "email": "Rose.Marakwena@gmail.com",
+        "country": "South Africa"
+      }
+    },
+    {
+      "timestamp": "2025-10-16T07:08:47.164341Z",
+      "event": "login_success",
+      "user_id": "MINN251016RM232502",
+      "username": "rose.morakwena.sou",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T07:10:06.652299Z",
+      "event": "login_success",
+      "user_id": "MINN251016SA317693",
+      "username": "system.admin.sou.min",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T14:37:14.522678Z",
+      "event": "login_failed",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay",
+      "attempts": 1,
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T14:53:26.777412Z",
+      "event": "login_success",
+      "user_id": "MINN251016SA317693",
+      "username": "system.admin.sou.min",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T14:54:44.506809Z",
+      "event": "login_failed",
+      "username": "Isaiah.Khupe@outlook.com",
+      "reason": "no_user",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T14:54:55.445438Z",
+      "event": "login_success",
+      "user_id": "MINN251016IK453900",
+      "username": "isaiah.khupe.uni.har",
+      "ip": "127.0.0.1"
+    },
+    {
+      "timestamp": "2025-10-16T15:00:12.944173Z",
+      "event": "login_success",
+      "user_id": "MINN251016BG859188",
+      "username": "barney.gwitima.ger.bay",
+      "ip": "127.0.0.1"
+    }
+  ]
+}

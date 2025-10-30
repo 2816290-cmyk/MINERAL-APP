@@ -1,0 +1,231 @@
+{
+  "countries": [
+    {
+      "iso": "ZAF",
+      "name": "South Africa",
+      "population": {
+        "2020": 59308690,
+        "2021": 59622388,
+        "2022": 60041996,
+        "2023": 62348496,
+        "2024": 63007187
+      },
+      "gdp_usd_billion": {
+        "2020": 301.9,
+        "2021": 351.4,
+        "2022": 419.9,
+        "2023": 401.0,
+        "2024": 358.9
+      },
+      "mineral_output_summary": {
+        "Manganese_t": 7200000,
+        "Platinum_group_metals_t": 1800,
+        "Chromium_t": 1400000
+      },
+      "key_projects": [
+        {"name": "Kalahari Manganese operations", "mineral": "Manganese", "status": "operating"},
+        {"name": "PGM operations (Bushveld Complex)", "mineral": "PGM", "status": "operating"}
+      ]
+    },
+    {
+      "iso": "COD",
+      "name": "Democratic Republic of the Congo",
+      "population": {
+        "2020": 89561403,
+        "2021": 91576414,
+        "2022": 93671301,
+        "2023": 95841000,
+        "2024": 98404346
+      },
+      "gdp_usd_billion": {
+        "2020": 47.2,
+        "2021": 55.8,
+        "2022": 69.3,
+        "2023": 62.9,
+        "2024": 62.0
+      },
+      "mineral_output_summary": {
+        "Cobalt_contained_t": 175000,
+        "Copper_t": 1300000
+      },
+      "key_projects": [
+        {"name": "Katanga copper-cobalt operations", "mineral": "Cobalt/Copper", "status": "operating"}
+      ]
+    },
+    {
+      "iso": "ZMB",
+      "name": "Zambia",
+      "population": {
+        "2020": 18383955,
+        "2021": 18916321,
+        "2022": 19587400,
+        "2023": 20000000,
+        "2024": 20500000
+      },
+      "gdp_usd_billion": {
+        "2020": 21.4,
+        "2021": 25.1,
+        "2022": 28.3,
+        "2023": 26.3,
+        "2024": 27.0
+      },
+      "mineral_output_summary": {
+        "Copper_t": 698000,
+        "Cobalt_contained_t": 3000
+      },
+      "key_projects": [
+        {"name": "Kansanshi Mine (First Quantum)", "mineral": "Copper", "status": "operating"},
+        {"name": "Lumwana (Barrick)", "mineral": "Copper", "status": "operating"}
+      ]
+    },
+    {
+      "iso": "ZWE",
+      "name": "Zimbabwe",
+      "population": {
+        "2020": 14862924,
+        "2021": 15087097,
+        "2022": 15317431,
+        "2023": 15551200,
+        "2024": 15790000
+      },
+      "gdp_usd_billion": {
+        "2020": 21.4,
+        "2021": 24.6,
+        "2022": 31.1,
+        "2023": 37.6,
+        "2024": 44.2
+      },
+      "mineral_output_summary": {
+        "Lithium_t": 7200,
+        "PGM_t": 300
+      },
+      "key_projects": [
+        {"name": "Bikita (lithium)", "mineral": "Lithium", "status": "operating"},
+        {"name": "Zandkopsdrift (development)", "mineral": "Lithium", "status": "development"}
+      ]
+    },
+    {
+      "iso": "MOZ",
+      "name": "Mozambique",
+      "population": {
+        "2020": 30515960,
+        "2021": 30864237,
+        "2022": 31255435,
+        "2023": 32000000,
+        "2024": 34631766
+      },
+      "gdp_usd_billion": {
+        "2020": 13.4,
+        "2021": 14.7,
+        "2022": 14.5,
+        "2023": 15.7,
+        "2024": 17.9
+      },
+      "mineral_output_summary": {
+        "Graphite_t": 165932,
+        "NaturalGas_Bcm": 0
+      },
+      "key_projects": [
+        {"name": "Balama graphite operations", "mineral": "Graphite", "status": "operating"}
+      ]
+    },
+    {
+      "iso": "GAB",
+      "name": "Gabon",
+      "population": {
+        "2020": 2225734,
+        "2021": 2260240,
+        "2022": 2295400,
+        "2023": 2330000,
+        "2024": 2360000
+      },
+      "gdp_usd_billion": {
+        "2020": 14.3,
+        "2021": 14.9,
+        "2022": 15.8,
+        "2023": 17.0,
+        "2024": 18.2
+      },
+      "mineral_output_summary": {
+        "Manganese_t": 300000
+      },
+      "key_projects": [
+        {"name": "Belinga / Gabon manganese operations", "mineral": "Manganese", "status": "operating"}
+      ]
+    },
+    {
+      "iso": "MWI",
+      "name": "Malawi",
+      "population": {
+        "2020": 19129952,
+        "2021": 19530000,
+        "2022": 19900000,
+        "2023": 20300000,
+        "2024": 20600000
+      },
+      "gdp_usd_billion": {
+        "2020": 7.4,
+        "2021": 8.0,
+        "2022": 9.2,
+        "2023": 10.0,
+        "2024": 10.8
+      },
+      "mineral_output_summary": {
+        "RareEarths_t": 0
+      },
+      "key_projects": [
+        {"name": "Songwe Hill (Mkango)", "mineral": "Rare earths", "status": "development"}
+      ]
+    },
+    {
+      "iso": "BWA",
+      "name": "Botswana",
+      "population": {
+        "2020": 2351627,
+        "2021": 2358450,
+        "2022": 2370000,
+        "2023": 2385000,
+        "2024": 2400000
+      },
+      "gdp_usd_billion": {
+        "2020": 17.5,
+        "2021": 18.2,
+        "2022": 19.0,
+        "2023": 18.5,
+        "2024": 18.9
+      },
+      "mineral_output_summary": {
+        "Diamonds_usd_million": 4000,
+        "Nickel_t": 15000
+      },
+      "key_projects": [
+        {"name": "Selibe Phikwe remnants / development projects", "mineral": "Nickel", "status": "operating/development"}
+      ]
+    },
+    {
+      "iso": "TZA",
+      "name": "Tanzania",
+      "population": {
+        "2020": 59734213,
+        "2021": 61200000,
+        "2022": 62700000,
+        "2023": 64400000,
+        "2024": 66200000
+      },
+      "gdp_usd_billion": {
+        "2020": 62.2,
+        "2021": 66.0,
+        "2022": 75.0,
+        "2023": 84.0,
+        "2024": 87.5
+      },
+      "mineral_output_summary": {
+        "Gold_t": 40,
+        "Graphite_t": 12000
+      },
+      "key_projects": [
+        {"name": "Balama (exploration/investments)", "mineral": "Graphite", "status": "exploration/production"}
+      ]
+    }
+  ]
+}

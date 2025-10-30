@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow">
+      <div class="card-header">
+        <h4>Welcome to MINN — Login</h4>
+        <small class="text-muted">Secure access for Administrators, Investors, and Researchers</small>
+      </div>
+      <div class="card-body">
+        <form method="post" novalidate>
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input name="username" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input name="password" type="password" class="form-control" required>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="{{ url_for('reset_request') }}">Forgot password?</a>
+            <button class="btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <div class="card shadow">
+      <div class="card-header">
+        <h4>Create an account</h4>
+      </div>
+      <div class="card-body">
+        <form method="post" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label>First name</label>
+              <input name="first_name" class="form-control" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label>Last name</label>
+              <input name="last_name" class="form-control" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label>Email</label>
+            <input name="email" type="email" class="form-control" required>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label>Country</label>
+              <input name="country" class="form-control" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label>Organization (optional)</label>
+              <input name="organization" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label>Role</label>
+            <select name="role" class="form-select">
+              <option value="Researcher" selected>Researcher</option>
+              <option value="Investor">Investor</option>
+            </select>
+            <div class="form-text">Administrator accounts must be created by an admin.</div>
+          </div>
+
+          <div class="mb-3">
+            <label>Password</label>
+            <input id="password" name="password" type="password" class="form-control" required>
+            <div id="pwhelp" class="form-text">Minimum 8 chars, upper, lower, digit and special char.</div>
+            <div id="strength" class="mt-2"></div>
+          </div>
+          <div class="mb-3">
+            <label>Confirm password</label>
+            <input name="confirm" type="password" class="form-control" required>
+          </div>
+          <div class="d-flex justify-content-between">
+            <a class="btn btn-link" href="{{ url_for('login') }}">Back to login</a>
+            <button class="btn btn-success">Create account</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

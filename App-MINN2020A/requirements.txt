@@ -1,0 +1,26 @@
+# --- Core framework ---
+Flask==3.0.3
+Werkzeug==3.0.3
+
+# --- Data handling ---
+pandas==2.2.2
+
+# --- Visualization ---
+plotly==5.24.1
+
+# --- Optional mapping (for later Folium integration) ---
+folium==0.17.0
+
+# --- For JSON + utilities ---
+itsdangerous==2.2.0
+Jinja2==3.1.4
+
+# --- Flask extensions (if using flash messages / login system) ---
+Flask-Login==0.6.3
+Flask-WTF==1.2.1
+
+# --- Security & hashing ---
+bcrypt==4.1.2
+
+# --- For Excel/CSV export (used by researcher) ---
+openpyxl==3.1.5
